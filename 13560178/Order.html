@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home - Ampstamp</title>
+<link rel="stylesheet" type="text/css" href="Css.css">
+<link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.css">
+<!-- JQuery -->
+<script src="JQuery/jquery-2.1.1.min.js"></script>
+<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+<!-- Toggle -->
+<script>
+$(".bt-login").click(function() {
+  $(this).toggleClass("on");
+  $("#logbox").slideToggle();
+});
+$(document).ready(function(){
+  $(".bt-login").click(function(){
+    $("#logbox").toggle(600);
+  });
+});
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+<div id="wrap-header">
+<div class="wrap960">
+	<div id="header">
+		<div id="mobile-header">
+			<div id="logo-s"><img src="image/logo.jpg" width="65" height="65"></div>
+          <div id="ampstamp-t"><br>
+            	<h1>Order</h1>
+            </div>
+          <div id="bt-moblie" class="show2page">
+            	<!--<i class="fa fa-align-justify"></i>-->
+                
+                <div id="toggle">
+  					<div class="one"></div>
+ 					 <div class="two"></div>
+  					<div class="three"></div>
+					</div>
+
+				<div id="menu" class="show2page">
+                	<ul>
+            	<a href="index.html"><li>Home</li></a>
+                        <a class="active" href="Order.html"><li>Order</li></a>
+                        <a href="#"><li>Point</li></a>
+                        <a href="#"><li>Promotion</li></a>
+                        <a href="#"><li>Contact</li></a>
+            </ul>
+                </div>
+<script type="text/javascript">
+$("#toggle").click(function() {
+  $(this).toggleClass("on");
+  $("#menu").slideToggle();
+});
+</script>
+            
+		</div> <!--Mobile-header-->
+        
+        <div id="menu-desktop" class="show960">
+        	<ul>
+            	<a class="active" href="index.html"><li>Home</li></a>
+                        <a href="#"><li>Order</li></a>
+                        <a href="#"><li>Point</li></a>
+                        <a href="#"><li>Promotion</li></a>
+                        <a href="#"><li>Contact</li></a>
+            </ul>
+                
+        </div> <!--menu-desktop-->
+	</div> <!--header-->
+    </div> <!-- Wrap960-->
+    </div> <!--wrap-header-->
+<div id="wrap-login2">  
+<div class="wrap960">  
+   
+    
+   <div class="wrap-allPic">
+    <div class="wrap960">
+    <div class="popup-gallery">
+    <form method="post" action="get_order.php">
+    	<div class="wrap-pic">
+        <div class="pic-L"><a href="image/sale1_03.jpg" data-lightbox="image/sale1_03.jpg" >
+        <img src="image/sale1_03.jpg"></a>
+        <input type="text" value="1" id="curry" name="chicken">
+        </div>
+        <div class="pic-L"><a href="image/sale1_05.jpg" data-lightbox="image/sale1_05.jpg" >
+        <img src="image/sale1_05.jpg"></a>
+      <input type="text" value="1" id="curry" name="sweet">
+        </div>
+         <div class="pic-L"><a href="image/sale1_09.jpg" data-lightbox="image/sale1_09.jpg" >
+        <img src="image/sale1_09.jpg"></a>
+        <input type="text" value="1" id="curry" name="red">
+        </div>
+        <div class="pic-L"><a href="image/sale1_10.jpg" data-lightbox="image/sale1_10.jpg" >
+        <img src="image/sale1_10.jpg"></a>
+        <input type="text" value="1" id="curry" name="black">
+        </div>
+       
+        
+        </div>
+       <input type="submit" id="buy" name="Buy" value="Buy">
+      </form>  
+                
+         <div id="box_left-footer-Desktop">
+        	
+            <!--<div id="contact-footer">CONTACT BY SOCIAL</div>-->
+            <div id="socialbt-footer">
+            	<div class="bt-footer"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                <div class="bt-footer"><a href="#"><i class="fa fa-twitter"></i></a></div>
+                <div class="bt-footer"><a href="#"><i class="fa fa-google-plus"></i></a></div>
+                <div class="bt-footer"><a href="#"><i class="fa fa-tumblr"></i></a></div>
+                <div class="bt-footer"><a href="#"><i class="fa fa-pinterest"></i></a></div>
+                <div class="bt-footer"><a href="#"><i class="fa fa-youtube"></i></a></div>
+            </div> <!--End socialbt-footer-->
+        
+        </div> <!--End box_left-footer-Desktop-->
+    </div>  <!--wrap-footer-->
+    </div>
+    </div> <!--wrapfoot-->
+    
+    
+<div id="wrapfoot">
+<div class="wrap960">    
+    <div id="footer-Desktop" class="show960">
+    	<div id="box_left-footer-Desktop">
+        	<div id="logo_footer">
+            	<img src="images/logo.png">
+            </div> <!--End logo_footer-->
+            <div id="socialbt-footer">
+            	<div class="bt-footer"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                <div class="bt-footer"><a href="#"><i class="fa fa-twitter"></i></a></div>
+                <div class="bt-footer"><a href="#"><i class="fa fa-google-plus"></i></a></div>
+                <div class="bt-footer"><a href="#"><i class="fa fa-tumblr"></i></a></div>
+                <div class="bt-footer"><a href="#"><i class="fa fa-pinterest"></i></a></div>
+                <div class="bt-footer"><a href="#"><i class="fa fa-youtube"></i></a></div>
+            </div> <!--End socialbt-footer-->
+        
+        </div> <!--End box_left-footer-Desktop-->
+        	<div id="subscribe-Desktop">
+                	<h2>ติดตามข่าวสาร</h2>
+                    <p>คุณสามารถติดตาม อัพเดท ข่าวสารของ แสตมป์<br>
+                    เพียงแค่คุณ ใส่ อีเมลล์ และกดปุ่มติดตามได้ที่นี้ กดเลยครับ</p>
+                    
+                    <input type="text" placeholder="Email" id="sub-input"> 
+                    <a href="#"><div id="btsub"> ติดตาม </div></a> 
+            
+            </div> <!--End subscribe-Desktop-->
+            	<div id="populartag-Desktop">
+                	<h2> คำยอดนิยม </h2>
+                    	<a href="#"><div class="btpopular">schollrose</div></a>
+                        <a href="#"><div class="btpopular">funny</div></a>
+                        <a href="#"><div class="btpopular">sometimes</div></a>
+                        <a href="#"><div class="btpopular">LOGO</div></a>
+                        <a href="#"><div class="btpopular">lolipop</div></a>
+                        <a href="#"><div class="btpopular">ladybug</div></a>
+                        <a class="active" href="#"><div class="btpopular">sometimes</div></a>
+                        <a href="#"><div class="btpopular">silpakorn</div></a>
+                        <a href="#"><div class="btpopular">powerof</div></a>
+                </div> <!--End populartag-Desktop-->
+    
+    </div> <!--End footer-Desktop-->
+    </div>
+    </div> <!--wrapfoot-->
+    <div id="copy_footer-Desktop">
+    	<p>Copyright &copy; 2017 made by Tanawat Sanchompoo Subject Web Studio 4</p>
+        
+        <div id="btuppage" class="show960">
+        <a class="scrollup"><div id="btuppage2">
+        	<i class="fa fa-chevron-up"></i>
+         </div></a>
+        
+        </div>
+     </div>
+
+</body>
+</html>
